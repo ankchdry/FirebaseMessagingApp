@@ -9,5 +9,16 @@ to sync data with server and RxSwift with MVVM architecture.
 ![](Snapshots/FirebaseRealtimeJsonStructure2.png)
 
 # App Snapshots
-
-![](Snapshots/AppLogin.png)![](Snapshots/AppGroups.png)![](Snapshots/AppMessages.png)
+<table>
+  <tr>
+    <th>
+      <img src="Snapshots/AppLogin.png" width="220"/>
+    </th>
+    <th>
+      <img src="Snapshots/AppGroups.png" width="220"/>
+    </th>
+    <th>
+    <img src="Snapshots/AppMessages.png" width="220"/>
+    </th>
+  </tr>
+</table>
