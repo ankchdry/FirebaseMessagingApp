@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatFragmentLeftTableViewCellIdentifier" rowHeight="80" id="KGk-i7-Jjw" customClass="ChatFragmentLeftTableViewCell" customModule="FirebaseMessagingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A8f-eT-HEG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Cv-4k-1XX">
+                                <rect key="frame" x="13" y="9" width="230" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37e-28-8GF">
+                                        <rect key="frame" x="10" y="12" width="208" height="22"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98092692466043463" green="0.98130854975190085" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="0Rk-Jd-nft"/>
+                                    <constraint firstAttribute="bottom" secondItem="37e-28-8GF" secondAttribute="bottom" constant="12" id="2AN-8h-Kxf"/>
+                                    <constraint firstItem="37e-28-8GF" firstAttribute="leading" secondItem="0Cv-4k-1XX" secondAttribute="leading" constant="10" id="E6u-pw-Yyq"/>
+                                    <constraint firstItem="37e-28-8GF" firstAttribute="top" secondItem="0Cv-4k-1XX" secondAttribute="top" constant="12" id="Mpe-9W-PWH"/>
+                                    <constraint firstAttribute="trailing" secondItem="37e-28-8GF" secondAttribute="trailing" constant="12" id="fvZ-rT-adi"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posted By - " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JM9-QY-wET">
+                                <rect key="frame" x="13" y="60" width="230" height="13"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="JM9-QY-wET" secondAttribute="bottom" constant="7" id="2wy-AC-lxx"/>
+                            <constraint firstItem="JM9-QY-wET" firstAttribute="top" secondItem="0Cv-4k-1XX" secondAttribute="bottom" constant="5" id="4Xu-0Z-l3i"/>
+                            <constraint firstItem="0Cv-4k-1XX" firstAttribute="top" secondItem="A8f-eT-HEG" secondAttribute="top" constant="9" id="HPI-VJ-PjS"/>
+                            <constraint firstItem="JM9-QY-wET" firstAttribute="leading" secondItem="0Cv-4k-1XX" secondAttribute="leading" id="JRB-b3-HHi"/>
+                            <constraint firstItem="JM9-QY-wET" firstAttribute="trailing" secondItem="0Cv-4k-1XX" secondAttribute="trailing" id="OKQ-U5-Rvo"/>
+                            <constraint firstItem="0Cv-4k-1XX" firstAttribute="leading" secondItem="A8f-eT-HEG" secondAttribute="leading" constant="13" id="dRM-Tu-qP7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="A8f-eT-HEG" secondAttribute="bottom" id="17t-D5-cT8"/>
+                    <constraint firstItem="A8f-eT-HEG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="A2n-LH-Yb3"/>
+                    <constraint firstAttribute="trailing" secondItem="A8f-eT-HEG" secondAttribute="trailing" id="emc-g3-6bo"/>
+                    <constraint firstItem="A8f-eT-HEG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gdj-I7-7lG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundContainer" destination="A8f-eT-HEG" id="TPg-PK-VAr"/>
+                <outlet property="chatLabel" destination="37e-28-8GF" id="DSz-ub-mh2"/>
+                <outlet property="fragmentContainer" destination="0Cv-4k-1XX" id="XQO-1q-zPZ"/>
+                <outlet property="otherDetailsLabel" destination="JM9-QY-wET" id="s0Q-2F-oZT"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </tableViewCell>
+    </objects>
+</document>

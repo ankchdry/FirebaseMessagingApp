@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZFt-ub-Xjz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat Group Details View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ChatGroupDetailsViewControllerIdentifier" id="BYZ-38-t0r" customClass="ChatGroupDetailsViewController" customModule="FirebaseMessagingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iWZ-18-qq2">
+                                <rect key="frame" x="0.0" y="88" width="414" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ipq-td-kzy">
+                                <rect key="frame" x="0.0" y="801" width="414" height="61"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X1u-Vk-Lth" customClass="OCTextView" customModule="FirebaseMessagingApp" customModuleProvider="target">
+                                        <rect key="frame" x="21" y="8" width="327" height="45"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="zMX-eY-Rju"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Type in here..."/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.52941882610000002" green="0.52139008050000002" blue="0.52941352129999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eF-fG-jqp">
+                                        <rect key="frame" x="356" y="3" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Kla-Ch-DbB"/>
+                                            <constraint firstAttribute="height" constant="50" id="v2n-Bj-agm"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
+                                        <state key="normal" image="send"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94118911029999996" green="0.94115382430000005" blue="0.94117778539999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="X1u-Vk-Lth" firstAttribute="top" secondItem="Ipq-td-kzy" secondAttribute="top" constant="8" id="9Wc-jj-VBw"/>
+                                    <constraint firstItem="4eF-fG-jqp" firstAttribute="leading" secondItem="X1u-Vk-Lth" secondAttribute="trailing" constant="8" id="Bls-cw-uZC"/>
+                                    <constraint firstAttribute="trailing" secondItem="4eF-fG-jqp" secondAttribute="trailing" constant="8" id="E9R-tK-Cbp"/>
+                                    <constraint firstAttribute="bottom" secondItem="X1u-Vk-Lth" secondAttribute="bottom" constant="8" id="Gkp-YN-2M2"/>
+                                    <constraint firstItem="X1u-Vk-Lth" firstAttribute="leading" secondItem="Ipq-td-kzy" secondAttribute="leading" constant="21" id="V1v-VY-qu5"/>
+                                    <constraint firstItem="4eF-fG-jqp" firstAttribute="top" secondItem="Ipq-td-kzy" secondAttribute="top" constant="3" id="l2l-HA-4vI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ipq-td-kzy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4BT-MW-xiU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="iWZ-18-qq2" secondAttribute="top" id="Hgp-sB-Yxs"/>
+                            <constraint firstItem="iWZ-18-qq2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pyl-DO-Qix"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iWZ-18-qq2" secondAttribute="trailing" id="Qlg-lQ-V3G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ipq-td-kzy" secondAttribute="trailing" id="cf4-Qp-44J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ipq-td-kzy" secondAttribute="bottom" id="ehl-Rp-gfs"/>
+                            <constraint firstItem="Ipq-td-kzy" firstAttribute="top" secondItem="iWZ-18-qq2" secondAttribute="bottom" constant="-1" id="lHo-tm-yrf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="chatBoxHeightConstraint" destination="zMX-eY-Rju" id="UpS-zX-xC6"/>
+                        <outlet property="chatBoxTextView" destination="X1u-Vk-Lth" id="0HM-IT-gep"/>
+                        <outlet property="chatGroupDetailsTableView" destination="iWZ-18-qq2" id="wJU-NO-k8d"/>
+                        <outlet property="sendButton" destination="4eF-fG-jqp" id="f24-er-4zU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="138"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="GsY-vh-xOD">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewControllerIdentifier" id="ZFt-ub-Xjz" customClass="LoginViewController" customModule="FirebaseMessagingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="af3-FH-iZB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="groupChat" translatesAutoresizingMaskIntoConstraints="NO" id="vBt-eU-L6b">
+                                <rect key="frame" x="147" y="194" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="dmh-b1-RRp"/>
+                                    <constraint firstAttribute="width" constant="120" id="ikO-Fo-iIe"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Yem-o0-X93">
+                                <rect key="frame" x="56" y="364" width="302" height="110"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email / Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Svw-yA-HA2" customClass="OCTextField" customModule="FirebaseMessagingApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="302" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="95i-b9-2Al"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.52941882610000002" green="0.52139008050000002" blue="0.52941352129999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textFieldTypeBox">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VLH-2N-VOT" customClass="OCTextField" customModule="FirebaseMessagingApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="66" width="302" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Gdc-Lf-3fY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textFieldTypeBox">
+                                                <integer key="value" value="21"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.52941882610000002" green="0.52139008050000002" blue="0.52941352129999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4O-mG-K9k">
+                                <rect key="frame" x="129" y="524" width="156" height="46"/>
+                                <color key="backgroundColor" red="0.55990028380000001" green="0.3489619195" blue="0.84318011999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="19"/>
+                                <inset key="contentEdgeInsets" minX="50" minY="10" maxX="50" maxY="10"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lDy-kH-gzD" firstAttribute="trailing" secondItem="Yem-o0-X93" secondAttribute="trailing" constant="56" id="6PY-kW-XCZ"/>
+                            <constraint firstItem="vBt-eU-L6b" firstAttribute="centerX" secondItem="lDy-kH-gzD" secondAttribute="centerX" id="P1s-1G-n7u"/>
+                            <constraint firstItem="Yem-o0-X93" firstAttribute="top" secondItem="vBt-eU-L6b" secondAttribute="bottom" constant="50" id="hPe-QJ-NcU"/>
+                            <constraint firstItem="Yem-o0-X93" firstAttribute="leading" secondItem="lDy-kH-gzD" secondAttribute="leading" constant="56" id="jhe-Cn-atM"/>
+                            <constraint firstItem="vBt-eU-L6b" firstAttribute="top" secondItem="lDy-kH-gzD" secondAttribute="top" constant="150" id="kZm-Fi-Wc2"/>
+                            <constraint firstItem="b4O-mG-K9k" firstAttribute="centerX" secondItem="Yem-o0-X93" secondAttribute="centerX" id="lYv-Yz-lxX"/>
+                            <constraint firstItem="b4O-mG-K9k" firstAttribute="top" secondItem="Yem-o0-X93" secondAttribute="bottom" constant="50" id="ulM-ZZ-Y3z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lDy-kH-gzD"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Svw-yA-HA2" id="Dz9-qs-fOC"/>
+                        <outlet property="loginButton" destination="b4O-mG-K9k" id="Y9b-KT-QSo"/>
+                        <outlet property="passwordTextField" destination="VLH-2N-VOT" id="7yP-GV-dx0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMM-j8-CY1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-672.46376811594212" y="137.94642857142856"/>
+        </scene>
+        <!--Chat Groups View Controller-->
+        <scene sceneID="zPP-aH-4gI">
+            <objects>
+                <viewController storyboardIdentifier="ChatGroupsViewControllerIdentifier" id="T4o-XQ-4Wo" customClass="ChatGroupsViewController" customModule="FirebaseMessagingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f7t-M7-CFy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l25-JM-OwN">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="l25-JM-OwN" firstAttribute="leading" secondItem="AUx-Gl-Hed" secondAttribute="leading" id="IGI-tF-tl0"/>
+                            <constraint firstItem="l25-JM-OwN" firstAttribute="top" secondItem="AUx-Gl-Hed" secondAttribute="top" id="V5P-jw-e7U"/>
+                            <constraint firstItem="AUx-Gl-Hed" firstAttribute="trailing" secondItem="l25-JM-OwN" secondAttribute="trailing" id="fC3-7T-qzm"/>
+                            <constraint firstItem="AUx-Gl-Hed" firstAttribute="bottom" secondItem="l25-JM-OwN" secondAttribute="bottom" id="uQ0-4n-aq1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AUx-Gl-Hed"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="chatFragmentTextView" destination="X1u-Vk-Lth" id="pYt-6M-sZC"/>
+                        <outlet property="chatGroupsTableView" destination="l25-JM-OwN" id="8Eo-mp-XuM"/>
+                        <outlet property="sendButton" destination="4eF-fG-jqp" id="iIe-dz-w1I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3J-6D-bE9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844.92753623188412" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="groupChat" width="100" height="100"/>
+        <image name="send" width="50" height="50"/>
+    </resources>
+</document>

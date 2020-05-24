@@ -1,0 +1,6 @@
+framework module Pods_FirebaseMessagingApp {
+  umbrella header "Pods-FirebaseMessagingApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
