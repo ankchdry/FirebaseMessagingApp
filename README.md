@@ -5,4 +5,9 @@ to sync data with server and RxSwift with MVVM architecture.
 
 # Backend JSON Structure 
 
-[]!(Snapshots/FirebaseRealtimeJsonStructure1.png)
+![](Snapshots/FirebaseRealtimeJsonStructure1.png)
+![](Snapshots/FirebaseRealtimeJsonStructure2.png)
+
+# App Snapshots
+
+![](Snapshots/AppLogin.png)![](Snapshots/AppGroups.png)![](Snapshots/AppMessages.png)
